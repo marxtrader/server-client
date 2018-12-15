@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+  <head>    
+    <!--
+            Final Project
+            Author: Chris Ranni
+            Date: Sept, 22, 2018
+        -->
+        <title>
+            Home
+        </title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="Content-Language" content="en">
+
+        <meta name="author" 
+        content="Christopher Ranni"/>
+  
+        <meta name= "description" 
+        content="Satisfaction of requirements" />
+  
+        <meta name="keywords" 
+        content="Final Project Web Dev Grid DOM Node" />
+
+    <link rel="stylesheet" href="grid.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+  </head>
+  <body id="body">
+    <header class="banner-wrapper">   
+      <div>
+        <h1>Final Project</h1>
+      </div>   
+      <div>
+        <h1 id="signIn">Sign In</h1>
+      </div>
+    </header>
+    <main class="body-wrapper">     
+      <div id="one">
+      </div> 
+      <div id="two">
+          <em>If it is your first time, you are automatically registered and the welcome message will follow or a welcome back. The signup in the upper right should show your login status.</em><br><br>
+          <form action="http://webdev.marxcloud.com" method="post">
+            <fieldset  id="signInForm">
+              <legend>Sign In</legend><br>
+                Fields marked * required.<br><br>
+  
+                <label>Email<br>
+                <input type="email" name="login" placeholder="user@email.com"></label><br><br>											
+                <label>Password<br>
+                <input type="password" name="login" placeholder="Password"></label><br><br>
+                
+                <input class="button" id="login" type="submit" value="Submit">
+              </div>						
+            </fieldset>
+          </form>
+      </div>
+      <div id="three">          
+      </div>
+      <div id="four">
+      </div>   
+      <div id="five">
+      </div>
+    </main>
+
+    <!--Event Listeners and event handlers for page content. 
+    <script src="helpers.js"></script>-->
+
+   <!-- issue post request for login form -->
+    <script src="fetch.js"></script>
+
+  </body>
+</html>
